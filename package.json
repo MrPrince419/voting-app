@@ -1,0 +1,24 @@
+{
+  "name": "voting-app",
+  "version": "1.0.0",
+  "description": "A modern, reactive voting application built with vanilla JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "voting",
+    "polls",
+    "javascript",
+    "vanilla-js"
+  ],
+  "author": "MrPrince419",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
