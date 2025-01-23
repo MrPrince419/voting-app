@@ -1,5 +1,7 @@
 # Interactive Voting App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/769f2c85-2558-403c-8b27-435e39272b6c/deploy-status)](https://app.netlify.com/sites/mrprince419-voting-app/deploys)
+
 A modern, reactive voting application built with vanilla JavaScript that provides real-time feedback and intuitive user interactions.
 
 ![Voting App Demo](https://user-images.githubusercontent.com/your-username/voting-app/demo.gif)
