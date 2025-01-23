@@ -1,12 +1,14 @@
 {
   "name": "voting-app",
   "version": "1.0.0",
+  "type": "module",
   "description": "A modern, reactive voting application built with vanilla JavaScript",
   "main": "index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,6 +23,7 @@
     "@fortawesome/fontawesome-free": "^6.0.0"
   },
   "devDependencies": {
-    "vite": "^4.5.9"
+    "vite": "^4.5.9",
+    "rimraf": "^5.0.1"
   }
 }
