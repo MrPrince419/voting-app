@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A modern, reactive voting application built with vanilla JavaScript",
-  "main": "index.html",
+  "main": "VotingApp.js",
   "scripts": {
     "dev": "vite",
-    "clean": "rimraf dist",
     "build": "npm run clean && vite build",
     "preview": "vite preview",
+    "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
