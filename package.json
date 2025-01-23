@@ -1,8 +1,6 @@
 {
   "name": "voting-app",
   "version": "1.0.0",
-  "description": "A modern, reactive voting application built with vanilla JavaScript",
-  "main": "main.js",
   "scripts": {
     "dev": "vite",
     "build": "npm run clean && vite build",
@@ -12,6 +10,5 @@
   "devDependencies": {
     "vite": "^4.5.9",
     "rimraf": "^5.0.1"
-  },
-  "type": "module"
+  }
 }

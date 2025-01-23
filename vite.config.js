@@ -2,19 +2,17 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  root: resolve(__dirname, '.'), // explicitly set root
+  root: resolve(__dirname, '.'),
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
+      input: resolve(__dirname, 'index.html'),
       output: {
-        dir: resolve(__dirname, 'dist'), // set output directory
+        dir: resolve(__dirname, 'dist'),
       },
     },
-    emptyOutDir: true, // clean the output directory before building
+    emptyOutDir: true,
   },
   server: {
-    open: '/index.html', // auto-open this file in the browser
+    open: '/index.html',
   },
 });
