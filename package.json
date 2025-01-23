@@ -5,6 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "npx http-server -o",
+    "build": "cp -r * dist/ || xcopy /E /I /Y . dist\\",
+    "build:preview": "cp -r * dist/ || xcopy /E /I /Y . dist\\",
+    "build:branch": "cp -r * dist/ || xcopy /E /I /Y . dist\\",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
