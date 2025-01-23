@@ -5,9 +5,10 @@
   "main": "index.html",
   "scripts": {
     "start": "npx http-server -o",
-    "build": "cp -r * dist/ || xcopy /E /I /Y . dist\\",
-    "build:preview": "cp -r * dist/ || xcopy /E /I /Y . dist\\",
-    "build:branch": "cp -r * dist/ || xcopy /E /I /Y . dist\\",
+    "prebuild": "mkdir -p dist",
+    "build": "cp -r index.html styles.css scripts.js assets dist/",
+    "build:preview": "npm run build",
+    "build:branch": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,7 +20,9 @@
   "author": "MrPrince419",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.0.0"
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.10"
   },
   "devDependencies": {
     "http-server": "^14.1.1"

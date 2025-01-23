@@ -1,9 +1,9 @@
 [build]
-  publish = "."
-  command = "npm install && npm run build"
+  publish = "dist"
+  command = "mkdir -p dist && npm ci && npm run build"
 
 [context.production]
-  environment = { NODE_VERSION = "16", NPM_VERSION = "8" }
+  environment = { NODE_VERSION = "18", NPM_VERSION = "9" }
 
 [context.deploy-preview]
   command = "npm run build:preview"
@@ -21,18 +21,17 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;"
     X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; connect-src 'self' https:;"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Access-Control-Allow-Origin = "*"
 
 [dev]
   framework = "#custom"
   command = "npm run dev"
   targetPort = 3000
   port = 8888
-  publish = "."
+  publish = "dist"
   autoLaunch = true
 
 # Enable Deploy Previews
