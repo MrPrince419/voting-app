@@ -4,7 +4,9 @@
   "description": "A modern, reactive voting application built with vanilla JavaScript",
   "main": "index.html",
   "scripts": {
-    "start": "npx http-server -o",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,6 +21,6 @@
     "@fortawesome/fontawesome-free": "^6.0.0"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "vite": "^4.5.9"
   }
 }
