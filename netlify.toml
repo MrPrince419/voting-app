@@ -1,7 +1,7 @@
 [build]
   base = "/"
   publish = "dist"
-  command = "npm ci && npm run build"
+  command = "mkdir -p dist/node_modules/@fortawesome && npm ci && cp -r index.html styles.css VotingApp.js demo-data.js src dist/ && cp -r node_modules/@fortawesome dist/node_modules/@fortawesome"
   functions = "netlify/functions"
 
 [build.environment]
@@ -9,13 +9,13 @@
   NPM_VERSION = "9"
 
 [context.production]
-  command = "npm ci && npm run build"
+  command = "mkdir -p dist/node_modules/@fortawesome && npm ci && cp -r index.html styles.css VotingApp.js demo-data.js src dist/ && cp -r node_modules/@fortawesome dist/node_modules/@fortawesome"
 
 [context.deploy-preview]
-  command = "npm run build:preview"
+  command = "mkdir -p dist/node_modules/@fortawesome && npm ci && cp -r index.html styles.css VotingApp.js demo-data.js src dist/ && cp -r node_modules/@fortawesome dist/node_modules/@fortawesome"
 
 [context.branch-deploy]
-  command = "npm run build:branch"
+  command = "mkdir -p dist/node_modules/@fortawesome && npm ci && cp -r index.html styles.css VotingApp.js demo-data.js src dist/ && cp -r node_modules/@fortawesome dist/node_modules/@fortawesome"
 
 [[redirects]]
   from = "/*"

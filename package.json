@@ -5,10 +5,6 @@
   "main": "index.html",
   "scripts": {
     "start": "npx http-server -o",
-    "prebuild": "mkdir -p dist",
-    "build": "cp -r index.html styles.css VotingApp.js demo-data.js src dist/ && cp -r node_modules/@fortawesome dist/node_modules/@fortawesome",
-    "build:preview": "npm run build",
-    "build:branch": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
